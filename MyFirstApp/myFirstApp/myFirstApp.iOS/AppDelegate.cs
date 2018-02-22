@@ -4,6 +4,8 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+//using FFImageLoading.Svg.Forms;
+//using FFImageLoading.Forms.Droid;
 
 namespace myFirstApp.iOS
 {
@@ -23,6 +25,10 @@ namespace myFirstApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            //to render Flag in format SVG
+            //CachedImageRenderer.Init(true);
+            //var ignore = typeof(SvgCachedImage);
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
