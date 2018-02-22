@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="myFirstApp.Views.CountryPage"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}"
+    Icon="ic_action_info"
+    Title="Details">
+    <ContentPage.Content>
+        <ScrollView 
+            BindingContext="{Binding Country}">
+            <StackLayout
+                Margin="5"
+                Padding="5">
+                <Label
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    HorizontalOptions="StartAndExpand"
+                    Text="{Binding Country.Name}"
+                    TextColor="WhiteSmoke">                    
+                </Label>
+                <ffimageloadingsvg:SvgCachedImage                                       
+                        HeightRequest="50" 
+                        HorizontalOptions="StartAndExpand" 
+                        Source="{Binding Country.Flag}" 
+                        WidthRequest="70">                    
+                </ffimageloadingsvg:SvgCachedImage>                        
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>                    
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Text="Capital:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.Capital}"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        Text="Population:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.Population, StringFormat='{0:N0}'}"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Text="Area:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.Area, StringFormat='{0:N0}'}"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        Text="Alpha Code 2:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.Alpha2Code}"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="4"
+                        Text="Alpha Code 3:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="4"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.Alpha3Code}"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="5"
+                        Text="Region:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="5"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.Region}"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="6"
+                        Text="Subregion:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="6"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.Subregion}"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="7"
+                        Text="Demonym:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="7"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.Demonym}"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="8"
+                        Text="GINI:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="8"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.Gini, StringFormat='{0:N2}'}"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="9"
+                        Text="Native Name:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="9"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.NativeName}"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="10"
+                        Text="Numeric Code:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="10"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.NumericCode}"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="11"
+                        Text="CIOC:"
+                        TextColor="WhiteSmoke">
+                    </Label>
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="11"
+                        FontAttributes="Bold"
+                        Text="{Binding Country.Cioc}"
+                        TextColor="WhiteSmoke">
+                    </Label>                     
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
