@@ -7,10 +7,152 @@
     Icon="ic_action_translate"
     Title="Translations">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Translations"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout
+            BindingContext="{Binding Country}"
+            Margin="5">
+            <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="{Binding Country.Name}"
+                TextColor="WhiteSmoke">
+            </Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Text="Germany:"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    FontAttributes="Bold"
+                    Text="{Binding Country.Translations.Germany}"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Text="Spanish:"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    FontAttributes="Bold"
+                    Text="{Binding Country.Translations.Spanish}"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    Text="French:"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    FontAttributes="Bold"
+                    Text="{Binding Country.Translations.French}"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    Text="Japanese:"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    FontAttributes="Bold"
+                    Text="{Binding Country.Translations.Japanese}"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="4"
+                    Text="Italian:"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="4"
+                    FontAttributes="Bold"
+                    Text="{Binding Country.Translations.Italian}"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="5"
+                    Text="Brazilian:"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="5"
+                    FontAttributes="Bold"
+                    Text="{Binding Country.Translations.Brazilian}"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="6"
+                    Text="Portuges:"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="6"
+                    FontAttributes="Bold"
+                    Text="{Binding Country.Translations.Portugues}"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="7"
+                    Text="Dutch:"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="7"
+                    FontAttributes="Bold"
+                    Text="{Binding Country.Translations.Dutch}"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="8"
+                    Text="Croatian:"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="8"
+                    FontAttributes="Bold"
+                    Text="{Binding Country.Translations.Croatian}"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="9"
+                    Text="Persian:"
+                    TextColor="WhiteSmoke">
+                </Label>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="9"
+                    FontAttributes="Bold"
+                    Text="{Binding Country.Translations.Persian}"
+                    TextColor="WhiteSmoke">
+                </Label>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

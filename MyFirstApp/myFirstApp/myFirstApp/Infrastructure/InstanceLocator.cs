@@ -4,7 +4,8 @@
     
     class InstanceLocator
     {
-        #region MyRegion
+        #region Properties
+
         public MainViewModel Main
         {
             get;

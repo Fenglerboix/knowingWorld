@@ -6,11 +6,12 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using FFImageLoading.Svg.Forms;
-using FFImageLoading.Forms.Droid;
-
 namespace myFirstApp.Droid
 {
+
+    using FFImageLoading.Svg.Forms;
+    using FFImageLoading.Forms.Droid;
+
     [Activity(Label = "myFirstApp", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
